@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">EEPA</string>
+    <string name="title_home">Home</string>
+    <string name="title_news">News</string>
+    <string name="title_settings">Settings</string>
+    <string name="welcome">Welcome</string>
+    <string name="search_hint">What do you want to learn today?</string>
+</resources>

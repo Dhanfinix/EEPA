@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EEPA</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_news">Berita</string>
+    <string name="title_settings">Pengaturan</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="search_hint">Apa yang mau kamu pelajari hari ini?</string>
+</resources>
