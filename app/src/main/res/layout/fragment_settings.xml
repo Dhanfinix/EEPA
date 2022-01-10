@@ -6,17 +6,127 @@
     android:layout_height="match_parent"
     tools:context=".ui.settings.SettingsFragment">
 
-    <TextView
-        android:id="@+id/text_notifications"
-        android:layout_width="match_parent"
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/news_bg"
+        android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="@string/title_settings"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="Muhammad Ramdhan"
+        android:textColor="@color/abu"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/tampilan"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_corner_smaller"
+        android:drawableLeft="@drawable/tampilan_icon"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/appearance"
+        android:textAlignment="viewStart"
+        android:letterSpacing="0"
+        android:textAllCaps="false"
+        android:textColor="@color/abu"
+        android:textSize="24sp"
+        app:backgroundTint="@color/biru_seken"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/bahasa"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_corner_smaller"
+        android:drawableLeft="@drawable/translate_icon"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/ChangeLang"
+        android:textAlignment="viewStart"
+        android:letterSpacing="0"
+        android:textAllCaps="false"
+        android:textColor="@color/abu"
+        android:textSize="24sp"
+        app:backgroundTint="@color/biru_seken"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tampilan" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_corner_smaller"
+        android:drawableLeft="@drawable/info_icon"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/about"
+        android:textAlignment="viewStart"
+        android:letterSpacing="0"
+        android:textAllCaps="false"
+        android:textColor="@color/abu"
+        android:textSize="24sp"
+        app:backgroundTint="@color/biru_seken"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bahasa" />
+
+    <Button
+        android:id="@+id/editprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/edit"
+        android:fontFamily="@font/nunito_bold"
+        android:textAllCaps="false"
+        android:textColor="@color/abu"
+        android:letterSpacing="0"
+        android:drawableLeft="@drawable/edit"
+        android:backgroundTint="@color/biru_seken"
+        app:layout_constraintBottom_toTopOf="@+id/tampilan"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

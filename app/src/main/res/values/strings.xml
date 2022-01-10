@@ -6,4 +6,9 @@
     <string name="welcome">Welcome</string>
     <string name="search_hint">What do you want to learn today?</string>
     <string name="select_news">Select News Source</string>
+    <string name="Theory">Theory</string>
+    <string name="appearance">Appearance</string>
+    <string name="ChangeLang">Change Language</string>
+    <string name="about">About</string>
+    <string name="edit">Edit Profile</string>
 </resources>
