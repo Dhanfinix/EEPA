@@ -12,4 +12,8 @@
     <string name="ChangeLang">Ubah bahasa</string>
     <string name="about">Tentang</string>
     <string name="edit">Ubah Profil</string>
+    <string name="see_all">Lihat Semua</string>
+    <string name="more">Lebih banyak</string>
+    <string name="memory">Asah Pemahaman</string>
+    <string name="example">Contoh</string>
 </resources>

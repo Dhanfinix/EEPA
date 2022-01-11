@@ -11,4 +11,8 @@
     <string name="ChangeLang">Change Language</string>
     <string name="about">About</string>
     <string name="edit">Edit Profile</string>
+    <string name="see_all">See All</string>
+    <string name="more">More</string>
+    <string name="memory">Sharpen Understanding</string>
+    <string name="example">Example</string>
 </resources>
