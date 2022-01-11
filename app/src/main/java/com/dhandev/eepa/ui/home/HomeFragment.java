@@ -1,6 +1,10 @@
 package com.dhandev.eepa.ui.home;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +30,7 @@ import org.imaginativeworld.whynotimagecarousel.OnItemClickListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class HomeFragment extends Fragment{
 
@@ -37,7 +42,6 @@ public class HomeFragment extends Fragment{
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         View view = inflater.inflate(R.layout.fragment_home, container, false); //imageview helper
         carousel = view.findViewById(R.id.carousel);
-
         //gambar pada carousel
         List<CarouselItem> listCar=new ArrayList<>();
 
@@ -93,7 +97,7 @@ public class HomeFragment extends Fragment{
 //            }
 //        });
         binding = FragmentHomeBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+      //  View root = binding.getRoot();
 
         return view;  //perhatikan return kudu view, agar bisa pindah activity, jika root tidak pindah
     }
@@ -101,6 +105,7 @@ public class HomeFragment extends Fragment{
         Intent intent =new Intent(getActivity(), Materi.class);
         startActivity(intent);
     }
+
 
     @Override
     public void onDestroyView() {

@@ -16,4 +16,8 @@
     <string name="more">Lebih banyak</string>
     <string name="memory">Asah Pemahaman</string>
     <string name="example">Contoh</string>
+    <string name="other_features">Fitur Lain</string>
+    <string name="exercise">Latihan</string>
+    <string name="calc">Kalkulator</string>
+    <string name="attachment">Lampiran</string>
 </resources>

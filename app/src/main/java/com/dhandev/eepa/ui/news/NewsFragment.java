@@ -1,5 +1,9 @@
 package com.dhandev.eepa.ui.news;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,16 +15,15 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.dhandev.eepa.databinding.FragmentNewsBinding;
 
+import java.util.Locale;
+
 public class NewsFragment extends Fragment {
 
     private NewsViewModel dashboardViewModel;
     private FragmentNewsBinding binding;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                new ViewModelProvider(this).get(NewsViewModel.class);
-
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        dashboardViewModel = new ViewModelProvider(this).get(NewsViewModel.class);
         binding = FragmentNewsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
@@ -33,6 +36,7 @@ public class NewsFragment extends Fragment {
 //        });
         return root;
     }
+
 
     @Override
     public void onDestroyView() {

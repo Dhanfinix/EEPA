@@ -223,6 +223,7 @@
             app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
         <LinearLayout
+            android:id="@+id/sharpen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -246,7 +247,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:background="@drawable/latihan"
-                android:text="@string/example"
+                android:text="@string/exercise"
                 android:gravity="start|bottom"
                 android:layout_weight="3"
                 android:padding="15dp"
@@ -258,7 +259,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:background="@drawable/flashcard"
-                android:text="@string/example"
+                android:text="@string/flashcard"
                 android:gravity="start|bottom"
                 android:layout_weight="3"
                 android:padding="15dp"
@@ -267,5 +268,51 @@
                 android:textSize="18sp"/>
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/fitur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/nunito_black"
+            android:text="@string/other_features"
+            android:textColor="@color/abu"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sharpen" />
+
+        <LinearLayout
+            android:id="@+id/lain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="90dp"
+            app:layout_constraintTop_toBottomOf="@+id/fitur">
+
+            <TextView
+                android:layout_width="116dp"
+                android:layout_height="130dp"
+                android:background="@drawable/kalkulator"
+                android:text="@string/calc"
+                android:gravity="start|bottom"
+                android:padding="15dp"
+                android:fontFamily="@font/nunito_black"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="116dp"
+                android:layout_height="130dp"
+                android:background="@drawable/lampiran"
+                android:text="@string/attachment"
+                android:gravity="start|bottom"
+                android:padding="15dp"
+                android:fontFamily="@font/nunito_black"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
