@@ -20,4 +20,6 @@
     <string name="exercise">Latihan</string>
     <string name="calc">Kalkulator</string>
     <string name="attachment">Lampiran</string>
+    <string name="Intro">Pengantar</string>
+    <string name="standard_model">Model Standar</string>
 </resources>

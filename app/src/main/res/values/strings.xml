@@ -20,4 +20,6 @@
     <string name="flashcard" translatable="false">Flashcard</string>
     <string name="calc">Calculator</string>
     <string name="attachment">Attachment</string>
+    <string name="Intro">Intro</string>
+    <string name="standard_model">The Standard Model</string>
 </resources>
