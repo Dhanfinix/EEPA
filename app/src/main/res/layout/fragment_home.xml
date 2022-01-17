@@ -94,14 +94,22 @@
             app:layout_constraintTop_toTopOf="@+id/editText"
             app:tint="@color/abu" />
 
+        //perlu linearlayout, agar bisa lihat previewnya
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:gravity="center_horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <Button
+                android:id="@+id/test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test"/>
 
             <org.imaginativeworld.whynotimagecarousel.ImageCarousel
                 android:id="@+id/carousel"
@@ -119,8 +127,17 @@
                 app:showIndicator="true"
                 app:showNavigationButtons="false"
                 app:showTopShadow="false">
-
             </org.imaginativeworld.whynotimagecarousel.ImageCarousel>
+
+            <ImageView
+                android:id="@+id/gambar"
+                android:layout_width="400dp"
+                android:layout_height="300dp"/>
+            <Button
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="update"/>
         </LinearLayout>
 
         <TextView

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "212441250152",
+    "project_id": "eepa-8d147",
+    "storage_bucket": "eepa-8d147.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212441250152:android:49e5cca316798ea4903edd",
+        "android_client_info": {
+          "package_name": "com.dhandev.eepa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212441250152-ptjagivot9thi1pkqu8qolj8f2bqc5fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJBI-YUNxxsS454VkVpJ_Ysks6GSBc4VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212441250152-ptjagivot9thi1pkqu8qolj8f2bqc5fg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
