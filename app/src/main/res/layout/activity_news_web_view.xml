@@ -19,6 +19,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
         android:layout_margin="20dp"
+        android:elevation="10dp"
         android:padding="15dp"
         android:gravity="bottom|center_vertical"
         android:background="@drawable/rounded_corner"
@@ -28,21 +29,27 @@
 
         <ImageView
             android:id="@+id/backBTN"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/back_button"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_weight="3"/>
         <ImageView
             android:id="@+id/homeNewsBTN"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/news"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_weight="3"/>
         <ImageView
             android:id="@+id/forwardBTN"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:clickable="true"
             android:src="@drawable/forward_button"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_weight="3"/>
 
     </LinearLayout>

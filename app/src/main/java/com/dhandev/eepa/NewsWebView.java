@@ -1,15 +1,19 @@
 package com.dhandev.eepa;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.Navigation;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.dhandev.eepa.ui.news.NewsFragment;
 
@@ -35,6 +39,9 @@ public class NewsWebView extends AppCompatActivity {
                 if (webViewNews.canGoForward()){
                     webViewNews.goForward();
                 }
+                else {
+                    Toast.makeText(getBaseContext(),"Can't go Forward",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -43,6 +50,9 @@ public class NewsWebView extends AppCompatActivity {
             public void onClick(View v) {
                 if (webViewNews.canGoBack()){
                     webViewNews.goBack();
+                }
+                else {
+                    Toast.makeText(getBaseContext(),"Can't go Back",Toast.LENGTH_SHORT).show();
                 }
             }
         });
