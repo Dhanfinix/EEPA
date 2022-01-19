@@ -47,9 +47,6 @@ public class HomeFragment extends Fragment{
     private HomeViewModel homeViewModel;
     private FragmentHomeBinding binding;
     private ImageCarousel carousel;
-    private Button test, update;
-    private ImageView imageView;
-    private SwipeRefreshLayout swipeRefreshLayout;
     private SharedPreferences getSharedPreferences;
 
 
@@ -59,77 +56,6 @@ public class HomeFragment extends Fragment{
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         View view = inflater.inflate(R.layout.fragment_home, container, false); //imageview helper
         carousel = view.findViewById(R.id.carousel);
-        test    = view.findViewById(R.id.test);
-        update  = view.findViewById(R.id.update);
-        imageView  =view.findViewById(R.id.gambar);
-        swipeRefreshLayout  = view.findViewById(R.id.swipeRefresh);
-
-        //init
-        firebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
-        FirebaseRemoteConfigSettings configSettings = new FirebaseRemoteConfigSettings.Builder().build();
-        firebaseRemoteConfig.setConfigSettingsAsync(configSettings);
-
-        //init default value for firebase remote config
-        Map<String, Object> defaultData = new HashMap<>();
-        defaultData.put("test","version 1.0");
-        defaultData.put("update", false);
-        defaultData.put("image_link","https://images.pexels.com/photos/2916826/pexels-photo-2916826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-        firebaseRemoteConfig.setDefaultsAsync(defaultData);
-
-        //load image
-        Picasso.get().load("https://images.pexels.com/photos/2916826/pexels-photo-2916826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-                .into(imageView);
-
-        //event pengambilan data baru dari firebase console
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                firebaseRemoteConfig.fetch(0) //time to live of cache, if 0 it will refresh without cache
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if(task.isSuccessful())
-                                {
-                                    firebaseRemoteConfig.activate();
-                                    test.setText(firebaseRemoteConfig.getString("test"));
-                                    test.setEnabled(firebaseRemoteConfig.getBoolean("update"));
-                                    Picasso.get().load(firebaseRemoteConfig.getString("image_link")).into(imageView);
-                                    Toast.makeText(getActivity(),"Updated",Toast.LENGTH_SHORT).show();
-                                }
-                                else {
-                                    Toast.makeText(getActivity(),"No Update"+task.getException().getMessage(),Toast.LENGTH_LONG).show();
-                                }
-                            }
-                        });
-                swipeRefreshLayout.setRefreshing(false);
-            }
-        });
-
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true); //how to make data updated permanent
-
-        //sama aja kyk diatas, cuma pakai button
-//        update.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                firebaseRemoteConfig.fetch(0) //time to live of cache, if 0 it will refresh without cache
-//                    .addOnCompleteListener(new OnCompleteListener<Void>() {
-//                        @Override
-//                        public void onComplete(@NonNull Task<Void> task) {
-//                            if(task.isSuccessful())
-//                            {
-//                                firebaseRemoteConfig.activate();
-//                                test.setText(firebaseRemoteConfig.getString("test"));
-//                                test.setEnabled(firebaseRemoteConfig.getBoolean("update"));
-//                                Picasso.get().load(firebaseRemoteConfig.getString("image_link")).into(imageView);
-//                            }
-//                            else {
-//                                Toast.makeText(getActivity(),""+task.getException().getMessage(),Toast.LENGTH_LONG);
-//                            }
-//                        }
-//                    });
-//            }
-//        });
-
 
         //gambar pada carousel
         List<CarouselItem> listCar=new ArrayList<>();
