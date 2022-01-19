@@ -30,7 +30,8 @@ public class NewsWebView extends AppCompatActivity {
         forwardBTN  = findViewById(R.id.forwardBTN);
         webViewNews = findViewById(R.id.webviewNews);
 
-        webViewNews.loadUrl("https://www.nature.com/subjects/particle-physics");
+        String url=getIntent().getExtras().getString("URL"); //terima string dari NewsFragment.java
+        webViewNews.loadUrl(url);
         webViewNews.setWebViewClient(new WebViewClient());
 
         forwardBTN.setOnClickListener(new View.OnClickListener() {

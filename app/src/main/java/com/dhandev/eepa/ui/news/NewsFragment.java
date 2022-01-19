@@ -45,6 +45,43 @@ public class NewsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), NewsWebView.class);
+                intent.putExtra("URL","https://www.nature.com/subjects/particle-physics"); //kirim url ke NewsWebView.java 
+                startActivity(intent);
+            }
+        });
+
+        scinews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), NewsWebView.class);
+                intent.putExtra("URL","https://www.sciencenews.org/topic/particle-physics");
+                startActivity(intent);
+            }
+        });
+
+        newsci.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), NewsWebView.class);
+                intent.putExtra("URL","https://www.newscientist.com/article-topic/particle-physics/");
+                startActivity(intent);
+            }
+        });
+
+        scitech.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), NewsWebView.class);
+                intent.putExtra("URL","https://scitechdaily.com/tag/particle-physics/");
+                startActivity(intent);
+            }
+        });
+
+        phyorg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), NewsWebView.class);
+                intent.putExtra("URL","https://phys.org/tags/particle+physics/");
                 startActivity(intent);
             }
         });
