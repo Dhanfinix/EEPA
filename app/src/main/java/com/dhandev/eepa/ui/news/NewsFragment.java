@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,6 +15,9 @@ import android.webkit.WebView;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
+import androidx.browser.customtabs.CustomTabColorSchemeParams;
+import androidx.browser.customtabs.CustomTabsIntent;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -44,9 +48,13 @@ public class NewsFragment extends Fragment {
         nature.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), NewsWebView.class);
-                intent.putExtra("URL","https://www.nature.com/subjects/particle-physics"); //kirim url ke NewsWebView.java 
-                startActivity(intent);
+                String url = "https://www.nature.com/subjects/particle-physics";
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                CustomTabsIntent customTabsIntent = builder.build();
+                customTabsIntent.launchUrl(getActivity(), Uri.parse(url));
+//                Intent intent = new Intent(getActivity(), NewsWebView.class);
+//                intent.putExtra("URL","https://www.nature.com/subjects/particle-physics"); //kirim url ke NewsWebView.java
+//                startActivity(intent);
             }
         });
 

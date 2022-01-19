@@ -9,6 +9,7 @@
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/ic_baseline_calculate_24.xml" value="0.2484375" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2484375" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2484375" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/logo.xml" value="0.12916666666666668" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/main_bg.xml" value="0.2484375" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/main_bg_splash.xml" value="0.1296875" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/news.xml" value="0.2484375" />
@@ -17,6 +18,9 @@
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/rounded_corner_smaller.xml" value="0.24427083333333333" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/settings.xml" value="0.2484375" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/uil_search.xml" value="0.2484375" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/font/nunito_black.xml" value="0.14375" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/font/nunito_bold.xml" value="0.14375" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/font/nunito_semibold.xml" value="0.14375" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_materi.xml" value="0.4" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_news_page.xml" value="0.23229166666666667" />
