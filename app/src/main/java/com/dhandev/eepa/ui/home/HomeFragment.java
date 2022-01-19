@@ -48,7 +48,7 @@ public class HomeFragment extends Fragment{
     private FragmentHomeBinding binding;
     private ImageCarousel carousel;
     private SharedPreferences getSharedPreferences;
-
+    private TextView seeAll, More;
 
     FirebaseRemoteConfig firebaseRemoteConfig;
 
@@ -56,6 +56,21 @@ public class HomeFragment extends Fragment{
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         View view = inflater.inflate(R.layout.fragment_home, container, false); //imageview helper
         carousel = view.findViewById(R.id.carousel);
+        seeAll  = view.findViewById(R.id.seeAll);
+        More    = view.findViewById(R.id.more);
+
+        seeAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                teori();
+            }
+        });
+        More.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                teori();
+            }
+        });
 
         //gambar pada carousel
         List<CarouselItem> listCar=new ArrayList<>();
