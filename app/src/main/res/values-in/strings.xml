@@ -22,4 +22,6 @@
     <string name="attachment">Lampiran</string>
     <string name="Intro">Pengantar</string>
     <string name="standard_model">Model Standar</string>
+    <string name="btn_next">Lanjut</string>
+    <string name="btn_back">Kembali</string>
 </resources>

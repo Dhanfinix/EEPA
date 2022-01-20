@@ -59,4 +59,5 @@ public class MainActivity extends AppCompatActivity {
         String language = prefs.getString("My_Lang","");
         setLocale(language);
     }
+
 }

@@ -22,4 +22,6 @@
     <string name="attachment">Attachment</string>
     <string name="Intro">Intro</string>
     <string name="standard_model">The Standard Model</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_back">Back</string>
 </resources>

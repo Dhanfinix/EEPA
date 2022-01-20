@@ -15,6 +15,9 @@
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/news.xml" value="0.2484375" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/news_bg.xml" value="0.2484375" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/rounded_corner.xml" value="0.2484375" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/rounded_corner_kananrata.xml" value="0.2484375" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/rounded_corner_kiri rata.xml" value="0.2484375" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/rounded_corner_kirirata.xml" value="0.2484375" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/rounded_corner_smaller.xml" value="0.24427083333333333" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/settings.xml" value="0.2484375" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/drawable/uil_search.xml" value="0.2484375" />
@@ -25,6 +28,7 @@
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_materi.xml" value="0.4" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_news_page.xml" value="0.23229166666666667" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_news_web_view.xml" value="0.264" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_on_boarding.xml" value="0.23229166666666667" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_splash_screen.xml" value="0.23229166666666667" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/fragment_home.xml" value="0.264" />
@@ -33,6 +37,7 @@
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/fragment_settings.xml" value="0.4" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/main_fragment.xml" value="0.23229166666666667" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/news_page_activity.xml" value="0.23229166666666667" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/slide_layout.xml" value="0.23229166666666667" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/menu/bottom_nav_browser.xml" value="0.23229166666666667" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/menu/bottom_nav_menu.xml" value="0.4" />
       </map>
