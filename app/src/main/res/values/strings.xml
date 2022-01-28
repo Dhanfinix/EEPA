@@ -24,4 +24,8 @@
     <string name="standard_model">The Standard Model</string>
     <string name="btn_next">Next</string>
     <string name="btn_back">Back</string>
+    <string name="login_greetings">Before starting to learn, let\'s introduce yourself first.</string>
+    <string name="name">Your name</string>
+    <string name="login">Login</string>
+    <string name="log_out">Logout</string>
 </resources>

@@ -24,4 +24,8 @@
     <string name="standard_model">Model Standar</string>
     <string name="btn_next">Lanjut</string>
     <string name="btn_back">Kembali</string>
+    <string name="login_greetings">Sebelum mulai belajar, perkenalkan dirimu dulu yuk.</string>
+    <string name="name">Nama kamu</string>
+    <string name="login">Masuk</string>
+    <string name="log_out">Keluar</string>
 </resources>

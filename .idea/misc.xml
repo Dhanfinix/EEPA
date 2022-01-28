@@ -24,17 +24,18 @@
         <entry key="..\:/dhandev/EEPA/app/src/main/res/font/nunito_black.xml" value="0.14375" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/font/nunito_bold.xml" value="0.14375" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/font/nunito_semibold.xml" value="0.14375" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_login.xml" value="0.23229166666666667" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_materi.xml" value="0.4" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_news_page.xml" value="0.23229166666666667" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_news_web_view.xml" value="0.264" />
-        <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_on_boarding.xml" value="0.23229166666666667" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_on_boarding.xml" value="0.2" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/activity_splash_screen.xml" value="0.23229166666666667" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/fragment_news.xml" value="0.264" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/fragment_notifications.xml" value="0.23229166666666667" />
-        <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/fragment_settings.xml" value="0.4" />
+        <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/fragment_settings.xml" value="0.264" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/main_fragment.xml" value="0.23229166666666667" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/news_page_activity.xml" value="0.23229166666666667" />
         <entry key="..\:/dhandev/EEPA/app/src/main/res/layout/slide_layout.xml" value="0.23229166666666667" />

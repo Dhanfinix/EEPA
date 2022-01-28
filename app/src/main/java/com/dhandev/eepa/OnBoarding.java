@@ -22,7 +22,7 @@ public class OnBoarding extends AppCompatActivity {
     private SliderAdapter sliderAdapter;
     private TextView[] mdots;
     private int curretPage;
-    Button btnNext, btnBack;
+    Button btnNext, btnBack, btnLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,7 @@ public class OnBoarding extends AppCompatActivity {
         dotsLayout      = findViewById(R.id.layoutDots);
         btnNext         = findViewById(R.id.btn_next);
         btnBack         = findViewById(R.id.btn_back);
+        btnLogin        = findViewById(R.id.btn_login);
 
         sliderAdapter   = new SliderAdapter(this);
 
@@ -41,6 +42,7 @@ public class OnBoarding extends AppCompatActivity {
         slideViewPager.addOnPageChangeListener(viewListener);
 
         btnBack.setVisibility(View.INVISIBLE);
+        btnLogin.setVisibility(View.INVISIBLE);
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,11 +56,18 @@ public class OnBoarding extends AppCompatActivity {
                 slideViewPager.setCurrentItem(curretPage -1);
             }
         });
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(OnBoarding.this, Login.class);
+                startActivity(intent);
+            }
+        });
 
         //read it here https://stackoverflow.com/questions/16419627/making-an-activity-appear-only-once-when-the-app-is-started/16419799
         SharedPreferences pref = getSharedPreferences("ActivityPREF", Context.MODE_PRIVATE);
         if(pref.getBoolean("activity_executed", false)){
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, Login.class);
             startActivity(intent);
             finish();
         } else {
@@ -95,31 +104,28 @@ public class OnBoarding extends AppCompatActivity {
         public void onPageSelected(int position) {
             addDotsIndicator(position);
             curretPage = position;
-            if (position ==0){
-                btnNext.setEnabled(true);
-                btnBack.setEnabled(false);
-                btnBack.setVisibility(View.INVISIBLE);
-                btnNext.setText(getString(R.string.btn_next));
-            } else if (position==mdots.length -1 ){
-                btnNext.setEnabled(true);
-                btnBack.setEnabled(true);
-                btnBack.setVisibility(View.VISIBLE);
-                btnNext.setText("Login");
-
-                btnNext.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(OnBoarding.this, MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-
-            } else {
-                btnNext.setEnabled(true);
-                btnBack.setEnabled(true);
-                btnBack.setVisibility(View.VISIBLE);
-                btnNext.setText(getString(R.string.btn_next));
+            switch (position){
+                case 0 :
+                    btnNext.setEnabled(true);
+                    btnBack.setEnabled(false);
+                    btnBack.setVisibility(View.INVISIBLE);
+                    btnLogin.setVisibility(View.INVISIBLE);
+                    btnNext.setVisibility(View.VISIBLE);
+                    break;
+                case 1 :
+                    btnNext.setEnabled(true);
+                    btnBack.setEnabled(true);
+                    btnBack.setVisibility(View.VISIBLE);
+                    btnLogin.setVisibility(View.INVISIBLE);
+                    btnNext.setVisibility(View.VISIBLE);
+                    break;
+                case 2 :
+                    btnNext.setEnabled(false);
+                    btnBack.setEnabled(true);
+                    btnBack.setVisibility(View.VISIBLE);
+                    btnNext.setVisibility(View.INVISIBLE);
+                    btnLogin.setVisibility(View.VISIBLE);
+                    break;
             }
         }
 

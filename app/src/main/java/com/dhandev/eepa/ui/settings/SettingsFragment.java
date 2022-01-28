@@ -26,7 +26,7 @@ public class SettingsFragment extends Fragment {
     private SettingsViewModel SettingsViewModel;
     private FragmentSettingsBinding binding;
     String selectedLang = "English";
-    Button bahasa;
+    Button bahasa, logout;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         SettingsViewModel = new ViewModelProvider(this).get(SettingsViewModel.class);
@@ -37,6 +37,16 @@ public class SettingsFragment extends Fragment {
         View root = binding.getRoot();
 
         bahasa = root.findViewById(R.id.UbahBahasa);
+        logout = root.findViewById(R.id.logout);
+
+        //buat tombol logout!
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
         bahasa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

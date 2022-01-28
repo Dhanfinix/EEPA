@@ -48,7 +48,7 @@ public class HomeFragment extends Fragment{
     private FragmentHomeBinding binding;
     private ImageCarousel carousel;
     private SharedPreferences getSharedPreferences;
-    private TextView seeAll, More;
+    private TextView seeAll, More, userName;
 
     FirebaseRemoteConfig firebaseRemoteConfig;
 
@@ -58,6 +58,11 @@ public class HomeFragment extends Fragment{
         carousel = view.findViewById(R.id.carousel);
         seeAll  = view.findViewById(R.id.seeAll);
         More    = view.findViewById(R.id.more);
+        userName    = view.findViewById(R.id.userName);
+
+        SharedPreferences sharedPreferences = getActivity().getApplicationContext().getSharedPreferences("userName", Context.MODE_PRIVATE);
+        String nama = sharedPreferences.getString("nama", "");
+        userName.setText(nama);
 
         seeAll.setOnClickListener(new View.OnClickListener() {
             @Override
